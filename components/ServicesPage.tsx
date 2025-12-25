@@ -26,7 +26,7 @@ export const ServicesPage: React.FC = () => {
            <h1 className="text-4xl md:text-5xl font-bold text-text-dark dark:text-white mb-6">
              All <span className="text-secondary">Services</span>
            </h1>
-           <p className="text-gray-500 dark:text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
+           <p className="text-gray-700 dark:text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
              We offer a comprehensive suite of digital marketing solutions designed to elevate your brand, drive traffic, and convert leads into loyal customers.
            </p>
         </div>
@@ -47,7 +47,7 @@ export const ServicesPage: React.FC = () => {
                                 <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-300"></div>
                             </div>
                             <h3 className="text-2xl font-bold text-text-dark dark:text-white mb-4 line-clamp-1 group-hover:text-primary dark:group-hover:text-secondary transition-colors">{service.title}</h3>
-                            <p className="text-gray-500 dark:text-gray-400 mb-6 text-base leading-relaxed line-clamp-3 min-h-[4.5em] flex-grow">{service.description}</p>
+                            <p className="text-gray-700 dark:text-gray-400 mb-6 text-base leading-relaxed line-clamp-3 min-h-[4.5em] flex-grow">{service.description}</p>
                             <div className="flex items-center gap-2 text-primary dark:text-secondary font-semibold text-sm group-hover:text-secondary dark:group-hover:text-white transition-colors mt-auto">
                                 <span>Learn more</span>
                                 <ArrowRight size={16} />

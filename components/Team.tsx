@@ -34,6 +34,9 @@ export const Team: React.FC = () => {
                 <h3 className="text-2xl font-bold text-text-dark dark:text-white mb-1 min-h-[64px] flex items-center justify-center">
                   {founder.name}
                 </h3>
+                <p className="text-gray-700 dark:text-gray-400 font-normal text-sm mb-1 flex items-center justify-center">
+                  {founder.education}
+                </p>
                 <p className="text-secondary font-medium min-h-[32px] flex items-center justify-center">
                   {founder.role}
                 </p>
@@ -63,7 +66,7 @@ export const Team: React.FC = () => {
                 <h4 className="text-lg font-bold text-text-dark dark:text-white mb-1 min-h-[48px] flex items-center justify-center">
                   {member.name}
                 </h4>
-                <p className="text-gray-500 dark:text-gray-400 text-sm mb-5 font-medium min-h-[28px] flex items-center justify-center">
+                <p className="text-gray-700 dark:text-gray-400 text-sm mb-5 font-medium min-h-[28px] flex items-center justify-center">
                   {member.role}
                 </p>
               </div>

@@ -61,7 +61,7 @@ export const Tools: React.FC = () => {
               </div>
               <div className="text-center">
                 <span className="block text-xl font-bold text-text-dark dark:text-white">{tool.percentage}%</span>
-                <span className="text-gray-500 dark:text-gray-400 font-medium">{tool.name}</span>
+                <span className="text-gray-700 dark:text-gray-400 font-medium">{tool.name}</span>
               </div>
             </div>
           ))}

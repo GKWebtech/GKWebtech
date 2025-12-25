@@ -55,8 +55,8 @@ export const Navbar: React.FC = () => {
   };
 
   const navLinks = [
-      { name: 'Services', id: 'services' },
       { name: 'About', id: 'about' },
+      { name: 'Services', id: 'services' },
       { name: 'Portfolio', id: 'portfolio' },
       { name: 'Blogs', id: 'blogs' },
       { name: 'FAQ', id: 'faq' }
@@ -64,11 +64,11 @@ export const Navbar: React.FC = () => {
 
   return (
     <nav className="fixed w-full z-50 top-0 py-4 transition-all duration-300">
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-">
         <div className={`
           flex justify-between items-center rounded-full px-4 pl-6 py-2 transition-all duration-300 mx-auto
           bg-[#1F4037] dark:bg-gray-900 shadow-xl border border-[#2D5C4B] dark:border-gray-700
-          ${scrolled ? 'w-full md:w-11/12 backdrop-blur-md bg-opacity-95 dark:bg-opacity-95' : 'w-full md:w-11/12'}
+          ${scrolled ? 'w-full md:w-full backdrop-blur-md bg-opacity-75 dark:bg-opacity-95' : 'w-full md:w-full'}
         `}>
           {/* Logo - Acts as Home Button */}
           <Link to="/" className="flex items-center gap-3 group cursor-pointer" onClick={() => window.scrollTo(0, 0)}>

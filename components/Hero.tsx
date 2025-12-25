@@ -19,34 +19,20 @@ export const Hero: React.FC = () => {
           {/* Left Content */}
           <div className="flex-1 z-10">
             <div className="inline-block relative mb-6 animate-fade-in-up opacity-0" style={{ animationDelay: '0.1s' }}>
-              <div className="absolute -inset-1 border border-secondary border-dashed rounded-lg opacity-50"></div>
-              <div className="relative bg-white dark:bg-gray-800 px-4 py-1 rounded-md border border-gray-200 dark:border-gray-700 shadow-sm transition-colors">
-                <span className="font-medium text-text-dark dark:text-gray-200">Growth Focused</span>
-              </div>
-              <div className="absolute -top-1 -left-1 w-2 h-2 bg-secondary rounded-full"></div>
-              <div className="absolute -top-1 -right-1 w-2 h-2 bg-secondary rounded-full"></div>
-              <div className="absolute -bottom-1 -left-1 w-2 h-2 bg-secondary rounded-full"></div>
-              <div className="absolute -bottom-1 -right-1 w-2 h-2 bg-secondary rounded-full"></div>
             </div>
 
             <h1 className="text-5xl md:text-7xl font-bold text-text-dark dark:text-white leading-tight mb-6 animate-fade-in-up opacity-0 transition-colors" style={{ animationDelay: '0.3s' }}>
-              We are <span className="text-secondary underline decoration-secondary decoration-4 underline-offset-4">Gajkesri Webtech,</span><br/>
+              <span className="text-secondary decoration-secondary decoration-4">Gajkesri Webtech,</span><br/>
               Digital Marketing<br/>
-              Experts Around the World.
+              Agency With Global Presence.
             </h1>
             
-            <p className="text-gray-500 dark:text-gray-400 max-w-lg mb-8 text-lg animate-fade-in-up opacity-0 transition-colors" style={{ animationDelay: '0.5s' }}>
+            <p className="text-gray-700 dark:text-gray-400 max-w-lg mb-8 text-lg animate-fade-in-up opacity-0 transition-colors" style={{ animationDelay: '0.5s' }}>
               We are an experienced Digital Marketing Agency helping brands scale with data-driven strategies, SEO, and creative campaigns.
             </p>
 
             <div className="flex flex-wrap gap-4 animate-fade-in-up opacity-0" style={{ animationDelay: '0.7s' }}>
-              <Button variant="primary" icon="arrow" href="/services">View Services</Button>
-              <button 
-                onClick={scrollToContact}
-                className="px-8 py-3 rounded-full border-2 border-text-dark dark:border-gray-200 font-medium hover:bg-text-dark dark:hover:bg-gray-200 dark:text-gray-200 hover:text-white dark:hover:text-primary transition-colors inline-block cursor-pointer"
-              >
-                Book Consultation
-              </button>
+              <Button onClick={scrollToContact} variant="primary" icon="arrow" href="/services">Book Consultation</Button>
             </div>
           </div>
 

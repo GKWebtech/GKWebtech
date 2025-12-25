@@ -341,6 +341,7 @@ export const projectsData: Project[] = [
 export const teamData: TeamMember[] = [
   {
     name: "Dr. Anuj Tiwari",
+    education: "PhD from Netherlands",
     role: "Founder & Director",
     image: "/images/team/Founder.png",
     linkedin: "https://www.linkedin.com/in/atal-s-03570938a/",
@@ -348,6 +349,7 @@ export const teamData: TeamMember[] = [
   },
   {
     name: "Utkarsh Sharma",
+    education: "",   
     role: "Chief Technical Officer",
     image: "/images/team/Utkarsh1.JPG",
     linkedin: "https://www.linkedin.com/in/utkarsh-sharma-2b9110362",
@@ -355,6 +357,7 @@ export const teamData: TeamMember[] = [
   },
   {
     name: "Vanshika Joshi",
+    education: "",
     role: "Chief Managing Officer",
     image: "/images/team/Vanshika.png",
     linkedin: "https://www.linkedin.com/in/vanshika-joshi-599247251/",
@@ -362,6 +365,7 @@ export const teamData: TeamMember[] = [
   },
   {
     name: "Vansh Joshi",
+    education: "",
     role: "Operations Manager",
     image: "/images/team/Vansh.png",
     linkedin: "#",

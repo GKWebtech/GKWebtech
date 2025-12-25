@@ -42,7 +42,7 @@ export const Testimonials: React.FC = () => {
                     ))}
                     <span className="text-text-dark dark:text-white font-bold ml-2 text-sm">{item.rating}.0</span>
                     </div>
-                    <p className="text-gray-500 dark:text-gray-300 leading-relaxed mb-8 text-sm">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-8 text-sm">
                     {item.text}
                     </p>
                     <div className="flex items-center gap-4">

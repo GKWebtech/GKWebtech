@@ -26,7 +26,7 @@ export const BlogsPage: React.FC = () => {
            <h1 className="text-4xl md:text-5xl font-bold text-text-dark dark:text-white mb-6">
              Latest <span className="text-secondary">Articles</span>
            </h1>
-           <p className="text-gray-500 dark:text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
+           <p className="text-gray-700 dark:text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
              Expert analysis, digital marketing trends, and actionable strategies to help your business grow.
            </p>
         </div>
@@ -53,11 +53,11 @@ export const BlogsPage: React.FC = () => {
                     {/* Content */}
                     <div className="p-6 flex flex-col flex-grow">
                        <div className="flex items-center gap-4 text-xs text-gray-400 mb-4">
-                          <span className="flex items-center gap-1">
+                          <span className="flex text-gray-600 dark:text-gray-400 items-center gap-1">
                              <Clock size={14} /> {blog.readTime}
                           </span>
                           <span>|</span>
-                          <span className="flex items-center gap-1">
+                          <span className="flex text-gray-600 dark:text-gray-400 items-center gap-1">
                              <User size={14} /> {blog.author}
                           </span>
                        </div>
@@ -66,7 +66,7 @@ export const BlogsPage: React.FC = () => {
                           {blog.title}
                        </h3>
                        
-                       <p className="text-gray-500 dark:text-gray-400 text-sm mb-6 line-clamp-3 leading-relaxed flex-grow">
+                       <p className="text-gray-700 dark:text-gray-400 text-sm mb-6 line-clamp-3 leading-relaxed flex-grow">
                           {blog.excerpt}
                        </p>
 

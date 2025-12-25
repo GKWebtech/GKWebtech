@@ -43,7 +43,7 @@ export const WhyChooseUs: React.FC = () => {
                </div>
                
                <h3 className="text-2xl font-bold text-text-dark dark:text-white mb-4">{item.title}</h3>
-               <p className="text-gray-500 dark:text-gray-400 leading-relaxed">
+               <p className="text-gray-700 dark:text-gray-400 leading-relaxed">
                  {item.description}
                </p>
                

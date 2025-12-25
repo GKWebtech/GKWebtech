@@ -33,7 +33,7 @@ export const PortfolioPage: React.FC = () => {
            <h1 className="text-4xl md:text-5xl font-bold text-text-dark dark:text-white mb-6">
              Full <span className="text-secondary">Gallery</span>
            </h1>
-           <p className="text-gray-500 dark:text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
+           <p className="text-gray-700 dark:text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
              Explore our diverse portfolio of digital campaigns, visual storytelling, and brand transformations.
            </p>
         </div>
@@ -82,7 +82,7 @@ export const PortfolioPage: React.FC = () => {
                         {project.title}
                     </h3>
                     
-                    <p className="text-gray-500 dark:text-gray-400 leading-relaxed mb-6 text-sm line-clamp-3 flex-grow">
+                    <p className="text-gray-700 dark:text-gray-400 leading-relaxed mb-6 text-sm line-clamp-3 flex-grow">
                         {project.description}
                     </p>
 

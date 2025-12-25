@@ -71,7 +71,7 @@ export const Portfolio: React.FC = () => {
                     ))}
                     </div>
 
-                    <p className="text-gray-500 dark:text-gray-400 leading-relaxed mb-8">
+                    <p className="text-gray-700 dark:text-gray-400 leading-relaxed mb-8">
                     {project.description}
                     </p>
 

@@ -28,7 +28,7 @@ export const Footer: React.FC = () => {
                   className="h-20 w-auto object-contain" 
                 />
              </div>
-             <p className="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-8 max-w-sm">
+             <p className="text-gray-700 dark:text-gray-400 text-sm leading-relaxed mb-8 max-w-sm">
                A premier digital marketing agency helping businesses grow through data-driven strategies and creative excellence.
              </p>
              <div className="flex gap-4">
@@ -60,7 +60,7 @@ export const Footer: React.FC = () => {
           {/* Links Column - Centered visually in desktop grid */}
           <div className="lg:col-span-3 lg:pl-10">
             <h4 className="text-lg font-bold text-primary dark:text-white mb-6">Company</h4>
-            <ul className="space-y-3 text-sm text-gray-500 dark:text-gray-400">
+            <ul className="space-y-3 text-sm text-gray-700 dark:text-gray-400">
               <li><Link to="/#about" className="hover:text-secondary transition-colors">About Us</Link></li>
               <li><Link to="/services" className="hover:text-secondary transition-colors">Services</Link></li>
               <li><Link to="/portfolio" className="hover:text-secondary transition-colors">Portfolio</Link></li>
@@ -73,11 +73,14 @@ export const Footer: React.FC = () => {
           {/* Contact Column - Right aligned */}
           <div className="lg:col-span-4">
             <h4 className="text-lg font-bold text-primary dark:text-white mb-6">Get in Touch</h4>
-            <ul className="space-y-4 text-sm text-gray-500 dark:text-gray-400">
+            <ul className="space-y-4 text-sm text-gray-700 dark:text-gray-400">
               <li className="flex items-start gap-3">
                  <span className="font-bold text-secondary">P:</span>
-                 <a href="tel:+919971944676" className="hover:text-secondary transition-colors">+91 99719 44676</a>
-              </li>
+                  <div className="flex flex-col"> 
+                    <a href="tel:+919971944676" className="hover:text-secondary transition-colors">+91 9971944676</a>
+                    <a href="tel:+31620508410" className="hover:text-secondary transition-colors">+31 620508410</a>
+                  </div>
+                 </li>
               <li className="flex items-start gap-3">
                  <span className="font-bold text-secondary">E:</span>
                  <a href="mailto:info@ayurvedastro.com" className="hover:text-secondary transition-colors">info@ayurvedastro.com</a>
@@ -90,10 +93,10 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-gray-100 dark:border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400">
+        <div className="pt-8 border-t border-gray-100 dark:border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-600">
            <p>Copyright © 2024 <span className="text-primary dark:text-white font-medium">Gajkesri Webtech</span>. All Rights Reserved.</p>
            <div className="flex items-center gap-6">
-             <Link to="/brochure-preview" className="flex items-center gap-1 hover:text-secondary transition-colors" title="Download Brochure PDF">
+             <Link to="/" className="flex items-center gap-1 hover:text-secondary transition-colors" title="Download Brochure PDF">
                <FileText size={12} />
                <span>Brochure</span>
              </Link>

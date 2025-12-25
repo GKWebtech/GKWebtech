@@ -14,7 +14,7 @@ export const Blog: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-end mb-12">
            <SectionHeader label="Insights" title="Marketing" subtitle="News & Trends" />
            <div className="mb-12">
-               <Button variant="dark" icon="arrow" href="/blogs" className="bg-primary text-white hover:bg-primary-dark dark:bg-gray-800 dark:hover:bg-gray-700">
+               <Button variant="primary" icon="arrow" href="/blogs" className="bg-primary text-white hover:bg-primary-dark dark:bg-gray-800 dark:hover:bg-gray-700">
                  View All Articles
                </Button>
            </div>
@@ -38,7 +38,7 @@ export const Blog: React.FC = () => {
                 <h3 className="text-xl font-bold text-text-dark dark:text-white mb-3 line-clamp-2 leading-tight group-hover:text-primary dark:group-hover:text-secondary transition-colors">
                   {blog.title}
                 </h3>
-                <p className="text-gray-400 dark:text-gray-500 text-sm mb-4 line-clamp-2">
+                <p className="text-gray-700 dark:text-gray-500 text-sm mb-4 line-clamp-2">
                    {blog.excerpt}
                 </p>
                 <span className="text-primary dark:text-secondary font-semibold text-sm underline underline-offset-4 decoration-secondary group-hover:no-underline">Read More</span>

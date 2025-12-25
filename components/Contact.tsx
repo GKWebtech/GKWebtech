@@ -74,8 +74,11 @@ export const Contact: React.FC = () => {
                 <div className="w-10 h-10 rounded-full bg-white dark:bg-gray-800 flex items-center justify-center text-primary dark:text-secondary shadow-sm">
                   <Phone size={20} />
                 </div>
-                <span className="text-primary dark:text-gray-200 font-bold">+91 99719 44676</span>
-              </div>
+                <div className="flex flex-col">
+                  <span className="text-primary dark:text-gray-200 font-bold">+91 9971944676</span>
+                  <span className="text-primary dark:text-gray-200 font-bold">+31 620508410</span>
+                </div>
+                </div>
 
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 rounded-full bg-white dark:bg-gray-800 flex items-center justify-center text-primary dark:text-secondary shadow-sm">

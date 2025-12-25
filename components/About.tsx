@@ -80,9 +80,7 @@ export const About: React.FC = () => {
                      <ArrowRight size={16} />
                    </span>
                 </button>
-                <div className="font-handwriting text-3xl text-secondary opacity-80" style={{ fontFamily: 'cursive' }}>
-                   Gajkesri Webtech
-                </div>
+                
               </div>
            </div>
         </div>

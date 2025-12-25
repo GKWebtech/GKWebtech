@@ -67,6 +67,7 @@ export interface ExperienceItem {
 
 export interface TeamMember {
   name: string;
+  education: string;
   role: string;
   image: string;
   linkedin: string;
