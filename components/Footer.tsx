@@ -37,7 +37,7 @@ export const Footer: React.FC = () => {
                  <Facebook size={18} />
                </a>
                {/* YouTube */}
-               <a href="#" aria-label="YouTube" className="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 text-primary dark:text-white flex items-center justify-center hover:bg-secondary hover:text-primary transition-all">
+               <a href="https://www.youtube.com/@GajkesriDigitalAgency" aria-label="YouTube" className="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 text-primary dark:text-white flex items-center justify-center hover:bg-secondary hover:text-primary transition-all">
                  <Youtube size={18} />
                </a>
                {/* X (formerly Twitter) */}
@@ -47,11 +47,11 @@ export const Footer: React.FC = () => {
                  </svg>
                </a>
                {/* Instagram */}
-               <a href="#" aria-label="Instagram" className="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 text-primary dark:text-white flex items-center justify-center hover:bg-secondary hover:text-primary transition-all">
+               <a href="https://www.instagram.com/gajkesritech/" aria-label="Instagram" className="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 text-primary dark:text-white flex items-center justify-center hover:bg-secondary hover:text-primary transition-all">
                  <Instagram size={18} />
                </a>
                {/* LinkedIn */}
-               <a href="#" aria-label="LinkedIn" className="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 text-primary dark:text-white flex items-center justify-center hover:bg-secondary hover:text-primary transition-all">
+               <a href="https://www.linkedin.com/in/gajkesri-digital-agency-5412643a0/" aria-label="LinkedIn" className="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 text-primary dark:text-white flex items-center justify-center hover:bg-secondary hover:text-primary transition-all">
                  <Linkedin size={18} />
                </a>
              </div>

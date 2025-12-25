@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { ArrowLeft, MapPin, Calendar, CheckCircle, Quote, Maximize2, Play, X } from 'lucide-react';
+import { ArrowLeft, MapPin, Calendar, CheckCircle, Quote, Maximize2, X } from 'lucide-react';
 import { TiltCard } from './TiltCard';
 import { projectsData } from '../data';
 
@@ -96,27 +96,33 @@ export const ProjectDetail: React.FC = () => {
                    </div>
                 </div>
 
-                {/* Videos Scroll View */}
-                {project.videos && project.videos.length > 0 && (
+                {/* ✅ Fixed YouTube Videos Section */}
+                {project.youtubeIds && project.youtubeIds.length > 0 && (
                   <div>
                     <h2 className="text-2xl font-bold text-primary dark:text-white mb-6">Project Videos</h2>
+
                     <div className="flex gap-6 overflow-x-auto pb-6 hide-scrollbar snap-x snap-mandatory">
-                        {project.videos.map((vid, idx) => (
-                          <div key={idx} className="relative min-w-[280px] md:min-w-[400px] h-64 md:h-80 rounded-2xl overflow-hidden shadow-md group cursor-pointer snap-center border border-gray-200 dark:border-gray-800 bg-black">
-                              <video src={vid} className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" muted />
-                              <div className="absolute inset-0 flex items-center justify-center">
-                                <button 
-                                  onClick={() => setFullScreenMedia({url: vid, type: 'video'})}
-                                  className="bg-secondary/90 p-4 rounded-full text-primary hover:scale-110 transition-transform shadow-xl"
-                                >
-                                    <Play size={32} fill="currentColor" />
-                                </button>
-                              </div>
-                              <div className="absolute bottom-4 right-4 bg-black/60 px-3 py-1 rounded-full text-white text-xs font-bold flex items-center gap-1">
-                                <Maximize2 size={12} /> Fullscreen
-                              </div>
-                          </div>
-                        ))}
+                      {project.youtubeIds.map((yt, idx) => (
+                        <div
+                          key={idx}
+                          className="relative min-w-[280px] md:min-w-[400px] h-64 md:h-80 rounded-2xl overflow-hidden shadow-md border border-gray-200 dark:border-gray-800 bg-black snap-center"
+                        >
+                          <iframe
+                            src={`https://www.youtube.com/embed/${yt}?rel=0&modestbranding=1&controls=1`}
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                            className="w-full h-full"
+                          ></iframe>
+
+                          {/* Fullscreen overlay to open modal */}
+                          <button
+                            onClick={() => setFullScreenMedia({ url: `https://www.youtube.com/watch?v=${yt}`, type: 'video' })}
+                            className="absolute bottom-4 right-4 bg-black/50 p-2 rounded-full text-white hover:scale-110 transition"
+                          >
+                            <Maximize2 size={16} />
+                          </button>
+                        </div>
+                      ))}
                     </div>
                   </div>
                 )}
@@ -144,11 +150,8 @@ export const ProjectDetail: React.FC = () => {
 
              {/* Right Sidebar: Stats & Info */}
              <div className="lg:col-span-1 space-y-8">
-                
-                {/* Project Info Card */}
                 <TiltCard className="bg-white dark:bg-gray-900 rounded-3xl p-8 shadow-xl border border-gray-100 dark:border-gray-800 sticky top-24">
                    <h3 className="text-lg font-bold text-primary dark:text-white mb-6 border-b border-gray-100 dark:border-gray-800 pb-4">Project Details</h3>
-                   
                    <div className="space-y-6">
                       <div>
                          <span className="block text-xs uppercase tracking-wide text-gray-400 mb-1">Client</span>
@@ -165,15 +168,12 @@ export const ProjectDetail: React.FC = () => {
                          </div>
                       </div>
                    </div>
-
                    <button 
                      onClick={handleStartProjectClick}
                      className="w-full mt-8 bg-secondary text-primary py-3 rounded-full font-bold hover:bg-primary hover:text-white transition-colors shadow-lg"
                    >
                       Start Similar Project
                    </button>
-                   
-                   {/* Results Mini Section */}
                    <div className="mt-8 pt-6 border-t border-gray-100 dark:border-gray-800">
                       <h4 className="font-bold text-primary dark:text-white mb-4 text-sm uppercase">Key Results</h4>
                       <ul className="space-y-3">
@@ -186,14 +186,13 @@ export const ProjectDetail: React.FC = () => {
                       </ul>
                    </div>
                 </TiltCard>
-
              </div>
 
           </div>
         </div>
       </div>
 
-      {/* Full Screen Media Modal */}
+      {/* Full Screen Modal */}
       {fullScreenMedia && (
         <div className="fixed inset-0 z-[100] bg-black/95 backdrop-blur-sm flex items-center justify-center p-4 animate-fade-in-up">
            <button 
@@ -204,19 +203,13 @@ export const ProjectDetail: React.FC = () => {
            </button>
 
            <div className="w-full h-full flex items-center justify-center max-w-7xl max-h-[90vh]">
-              {fullScreenMedia.type === 'image' ? (
-                <img 
-                  src={fullScreenMedia.url} 
-                  alt="Full Screen View" 
-                  className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
-                />
-              ) : (
-                <video 
-                  src={fullScreenMedia.url} 
-                  controls 
-                  autoPlay 
-                  className="max-w-full max-h-full rounded-lg shadow-2xl"
-                />
+              {fullScreenMedia.type === 'video' && (
+                <iframe
+                  src={`https://www.youtube.com/embed/${project.youtubeIds[0]}?controls=1&autoplay=1`}
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen
+                  className="w-full h-[80vh] rounded-lg shadow-2xl border-0"
+                ></iframe>
               )}
            </div>
         </div>

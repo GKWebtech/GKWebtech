@@ -249,76 +249,62 @@ export const blogsData: BlogPost[] = [
 
 export const projectsData: Project[] = [
   {
-    id: "royal-heritage-fort",
-    title: "The Royal Heritage Fort",
-    location: "Neemrana, Rajasthan",
-    category: "Resort Advertising",
+    id: "Nirvanavan Foundation",
+    title: "Nirvanavan Foundation",
+    location: "Dadikar, Rajasthan",
+    category: "Event ",
     description: "A cinematic showcase of the 15th-century heritage property, highlighting its architectural splendor and luxury amenities through drone videography and lifestyle photography.",
-    image: "https://images.unsplash.com/photo-1599661046289-e31897846e41?q=80&w=1200&auto=format&fit=crop",
-    mediaStats: { photos: 45, videos: 3 },
-    tags: ["Drone", "Hospitality", "Video"],
-    client: "Royal Heritage Group",
-    duration: "2 Months",
+    image: "/images/portfolio/Nirvanan-Foundation/Group.jpeg",
+    mediaStats: { photos: 10, videos: 1 },
+    tags: ["Drone", "Video", "Art"],
+    client: "Nirvanan Foundation",
+    duration: "2 Weeks",
     challenge: "The property, despite its historical significance, was struggling to attract the modern luxury traveler due to an outdated digital presence.",
     solution: "We executed a comprehensive visual rebranding campaign. Utilizing 4K drone videography to capture the scale of the fort and intimate lifestyle photography to showcase the guest experience.",
     results: ["300% Increase in Wedding Bookings", "2M+ Views on Social Media", "Featured in Travel & Leisure"],
     testimonial: {
       text: "Gajkesri Webtech captured the soul of our property. The visuals are breathtaking and have directly contributed to our highest occupancy season ever.",
-      author: "Rajiv Singh",
-      role: "General Manager"
+      author: "Nirvanan Bodhisattva",
+      role: "Founder of Nirvanan Foundation"
     },
-    gallery: [
-      "https://images.unsplash.com/photo-1590765902095-23f218f45a03?q=80&w=800",
-      "https://images.unsplash.com/photo-1590765796280-9286d0ce1806?q=80&w=800",
-      "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=800",
-      "https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=800"
-    ],
-    videos: [
-      "https://assets.mixkit.co/videos/preview/mixkit-aerial-view-of-a-historic-castle-on-a-hill-4240-large.mp4",
-      "https://assets.mixkit.co/videos/preview/mixkit-forest-stream-in-the-sunlight-529-large.mp4"
-    ]
+    gallery: [],
+    youtubeIds: []
+
   },
   {
-    id: "umaid-bhawan-grandeur",
-    title: "Umaid Bhawan Grandeur",
-    location: "Udaipur, India",
-    category: "Luxury Hotel Shoot",
-    description: "Capturing the regal essence of one of the world's largest private residences. Our team delivered a comprehensive visual package for their digital rebranding.",
-    image: "https://images.unsplash.com/photo-1585544314038-a0d07e6980e6?q=80&w=1200&auto=format&fit=crop",
-    mediaStats: { photos: 60, videos: 5 },
-    tags: ["Luxury", "Interior", "Lifestyle"],
-    client: "Taj Hotels",
-    duration: "3 Weeks",
+    id: "Rambihari Palace",
+    title: "Rambihari Palace",
+    location: "Kishanpur, Alwar, Rajasthan",
+    category: "Luxury Palace Shoot",
+    description: "Capturing the regal essence of one of the best hidden gem of Rajasthan's culture. Our team delivered a comprehensive visual package for their digital rebranding.",
+    image: "/images/portfolio/Rambihari/20251213_230354.jpg",
+    mediaStats: { photos: 19, videos: 2 },
+    tags: ["Luxury", "Interior", "Royality", "Lifestyle", "Hospitality"],
+    client: "Rambihari Palace A Luxury Hotel",
+    duration: "1 Week",
     challenge: "To showcase the grandeur of the palace without making it feel inaccessible or intimidating to the younger demographic.",
     solution: "We focused on 'Royal Warmth'—capturing not just the architecture, but the personalized service and intimate moments within the grand spaces.",
-    results: ["50% Increase in Website Engagement", "Award for Best Hotel Video 2023", "Viral Campaign on Instagram"],
+    results: ["50% Increase in Website Engagement", "Viral Campaign on Instagram"],
     testimonial: {
       text: "The team's attention to detail is unmatched. They managed to balance the heritage with a modern aesthetic perfectly.",
-      author: "Priya Sharma",
-      role: "Marketing Director"
+      author: "Mr. Ram Kaushik",
+      role: "Owner"
     },
-    gallery: [
-      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=800",
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=800",
-      "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?q=80&w=800",
-      "https://images.unsplash.com/photo-1629140727571-9b5c6f6267b4?q=80&w=800"
-    ],
-    videos: [
-        "https://assets.mixkit.co/videos/preview/mixkit-hotel-lobby-with-luxury-decoration-4242-large.mp4"
-    ]
+    gallery: ["/images/portfolio/Rambihari/IMG_0448.JPG", "/images/portfolio/Rambihari/6.1.jpg", "/images/portfolio/Rambihari/9.1.jpg", "/images/portfolio/Rambihari/20251213_224325.jpg", "/images/portfolio/Rambihari/IMG_0336.JPG", "/images/portfolio/Rambihari/IMG_0385.png", "/images/portfolio/Rambihari/IMG_0408.png", "/images/portfolio/Rambihari/IMG_0435.JPG", "/images/portfolio/Rambihari/IMG_0437.png", "/images/portfolio/Rambihari/IMG_0448.JPG",, "/images/portfolio/Rambihari/IMG_0545.JPG", "/images/portfolio/Rambihari/IMG_0551.png", "/images/portfolio/Rambihari/IMG_0592.JPG", "/images/portfolio/Rambihari/IMG_0633.JPG", "/images/portfolio/Rambihari/IMG_0639.JPG", "/images/portfolio/Rambihari/IMG_0648.JPG", "/images/portfolio/Rambihari/IMG_0651.png", "/images/portfolio/Rambihari/IMG_0653.JPG", "/images/portfolio/Rambihari/IMG_0654.JPG"],
+    youtubeIds: []
   },
   {
-    id: "amber-sunset-chronicles",
-    title: "Amber Sunset Chronicles",
-    location: "Jaipur, Rajasthan",
-    category: "Outdoor Destination Campaign",
-    description: "An evocative outdoor shoot capturing the golden hour at the majestic Amber Fort, designed to promote destination weddings and cultural tourism.",
+    id: "Dadikar Fort",
+    title: "Dadikar Fort",
+    location: "Dadikar, Rajasthan",
+    category: "Luxury Fort Shoot",
+    description: "An evocative outdoor shoot capturing the golden hour at the majestic Dadikar Fort, designed to promote destination weddings and cultural tourism.",
     image: "https://images.unsplash.com/photo-1566373738875-d6874e0d9956?q=80&w=1200&auto=format&fit=crop",
-    mediaStats: { photos: 32, videos: 2 },
-    tags: ["Travel", "Culture", "Outdoor"],
-    client: "Rajasthan Tourism",
+    mediaStats: { photos: 10, videos: 2 },
+    tags: ["Travel", "Culture", "Luxury", "Outdoor"],
+    client: "Dadhikar Fort & Resorts Private Limited",
     duration: "1 Week",
-    challenge: "To promote Amber Fort as a premier wedding destination while respecting its cultural heritage.",
+    challenge: "To promote Dadikar Fort as a premier wedding destination while respecting its cultural heritage.",
     solution: "We utilized natural lighting during golden hour to create a romantic, dream-like atmosphere, integrating traditional attire with the historic backdrop.",
     results: ["Top Trending Travel Reel in India", "15% Rise in Pre-wedding Shoot Inquiries"],
     gallery: [
@@ -326,23 +312,23 @@ export const projectsData: Project[] = [
        "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?q=80&w=800",
        "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?q=80&w=800"
     ],
-    videos: [
+    youtubeIds: [ 
         "https://assets.mixkit.co/videos/preview/mixkit-woman-walking-on-a-beach-at-sunset-4638-large.mp4"
     ]
   },
   {
-    id: "urban-fashion-week",
-    title: "Urban Fashion Week",
-    location: "Mumbai, India",
-    category: "Event Coverage",
-    description: "High-energy event coverage for Mumbai's premier fashion week, delivering real-time social media content.",
+    id: "Bamboo Saa Resort & Spa",
+    title: "Bamboo Saa Resort & Spa",
+    location: "Jaipur, Rajasthan",
+    category: "Wellness Retreat Marketing",
+    description: "High-energy event coverage for Jaipur's premier wellness retreat, delivering real-time social media content.",
     image: "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=1200&auto=format&fit=crop",
-    mediaStats: { photos: 120, videos: 15 },
-    tags: ["Fashion", "Event", "Live"],
-    client: "Fashion Design Council",
-    duration: "3 Days",
-    challenge: "Capturing the fast-paced nature of a fashion show and delivering edited content in near real-time for social media.",
-    solution: "We deployed a 5-person team with on-site editors. Photos were uploaded within minutes of the walk, ensuring maximum social buzz.",
+    mediaStats: { photos: 10, videos: 2 },
+    tags: ["Wellness", "Nature", "Amenities"],
+    client: "Mr. V.K. Agarwal",
+    duration: "1 Week",
+    challenge: "Capturing the nature in a resort based in the capital of Rajasthan and delivering edited content in near real-time for social media.",
+    solution: "We deployed a 5-person team with on-site editors. Ensuring maximum social buzz.",
     results: ["5M+ Hashtag Reach", "Live Stream viewed by 50k people"],
     gallery: [
        "https://images.unsplash.com/photo-1537832816519-689ad163238b?q=80&w=800",
@@ -356,35 +342,28 @@ export const teamData: TeamMember[] = [
   {
     name: "Dr. Anuj Tiwari",
     role: "Founder & Director",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop",
-    linkedin: "#",
+    image: "/images/team/Founder.png",
+    linkedin: "https://www.linkedin.com/in/atal-s-03570938a/",
     github: "#"
   },
   {
     name: "Utkarsh Sharma",
-    role: "Fullstack Developer & AI Automation Engineer",
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop",
+    role: "Chief Technical Officer",
+    image: "/images/team/Utkarsh1.JPG",
     linkedin: "https://www.linkedin.com/in/utkarsh-sharma-2b9110362",
     github: "https://github.com/Utkarsh9571"
   },
   {
     name: "Vanshika Joshi",
-    role: "Creative Director",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop",
-    linkedin: "#",
-    github: "#"
-  },
-  {
-    name: "Harshvardhan Vashisth",
-    role: "Backend Architect",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop",
-    linkedin: "#",
+    role: "Chief Managing Officer",
+    image: "/images/team/Vanshika.png",
+    linkedin: "https://www.linkedin.com/in/vanshika-joshi-599247251/",
     github: "#"
   },
   {
     name: "Vansh Joshi",
-    role: "Marketing Head",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=800&auto=format&fit=crop",
+    role: "Operations Manager",
+    image: "/images/team/Vansh.png",
     linkedin: "#",
     github: "#"
   }
@@ -406,7 +385,7 @@ export const testimonialsData: Testimonial[] = [
     image: "https://randomuser.me/api/portraits/men/32.jpg"
   },
   {
-    rating: 5,
+    rating: 4,
     text: "The ROI we've seen from their PPC campaigns is incredible. Professional, data-driven, and transparent reporting. Highly recommended!",
     name: "Jenny Wilson",
     role: "Director of Marketing, FashionNova",

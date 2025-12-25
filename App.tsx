@@ -36,6 +36,21 @@ function App() {
                   <Route path="/blog/:id" element={<BlogDetail />} />
                 </Routes>
               </main>
+
+              {/* Floating WhatsApp CTA goes here, OUTSIDE of Routes */}
+              <a
+                href="https://wa.me/9971944676?text=Hi,%20I%20want%20to%20discuss%20digital%20marketing%20services."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="fixed bottom-5 right-5 flex items-center p-1 justify-center bg-white dark:bg-gray-900 rounded-full shadow-lg hover:scale-110 transition"
+              >
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                  alt="WhatsApp"
+                  className="w-12 h-12"
+                />
+              </a>
+
               <Footer />
             </>
           } />

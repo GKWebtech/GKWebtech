@@ -32,7 +32,7 @@ export const Hero: React.FC = () => {
             <h1 className="text-5xl md:text-7xl font-bold text-text-dark dark:text-white leading-tight mb-6 animate-fade-in-up opacity-0 transition-colors" style={{ animationDelay: '0.3s' }}>
               We are <span className="text-secondary underline decoration-secondary decoration-4 underline-offset-4">Gajkesri Webtech,</span><br/>
               Digital Marketing<br/>
-              Experts Based Around the World.
+              Experts Around the World.
             </h1>
             
             <p className="text-gray-500 dark:text-gray-400 max-w-lg mb-8 text-lg animate-fade-in-up opacity-0 transition-colors" style={{ animationDelay: '0.5s' }}>

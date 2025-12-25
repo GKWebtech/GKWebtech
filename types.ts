@@ -36,7 +36,7 @@ export interface Project {
     role: string;
   };
   gallery: string[]; // Array of image URLs
-  videos?: string[]; // Array of video URLs
+  youtubeIds?: string[]; // Array of video URLs
 }
 
 export interface Stat {
