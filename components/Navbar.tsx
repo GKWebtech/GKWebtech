@@ -71,7 +71,7 @@ export const Navbar: React.FC = () => {
           ${scrolled ? 'w-full md:w-full backdrop-blur-md bg-opacity-75 dark:bg-opacity-95' : 'w-full md:w-full'}
         `}>
           {/* Logo - Acts as Home Button */}
-          <Link to="/" className="flex items-center gap-3 group cursor-pointer" onClick={() => window.scrollTo(0, 0)}>
+          <Link to="/" className="flex w-1/6 items-center gap-3 group cursor-pointer" onClick={() => window.scrollTo(0, 0)}>
             <img 
               src={LOGO_SRC} 
               alt="Gajkesri Webtech" 

@@ -95,6 +95,14 @@ export const Contact: React.FC = () => {
                   Tiwari Clinic, Mahatma Jyotiba Fule Circle, Sch. No. 7, Alwar 301001, Rajasthan, India
                 </span>
               </div>
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-full bg-white dark:bg-gray-800 flex items-center justify-center text-primary dark:text-secondary shadow-sm flex-shrink-0">
+                  <MapPin size={20} />
+                </div>
+                <span className="text-primary dark:text-gray-200 font-bold leading-tight">
+                  100 webster avenue, Mt Roskill, Auckland 1041, Netherlands
+                </span>
+              </div>
             </div>
           </div>
 
