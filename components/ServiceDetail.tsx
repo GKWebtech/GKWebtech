@@ -89,7 +89,7 @@ export const ServiceDetail: React.FC = () => {
             </div>
 
             {/* Sidebar */}
-            <div className="lg:col-span-1 space-y-6">
+            <div className="lg:col-span-1 space-y-6 relative z-10">
               
               {/* CTA Card */}
               <TiltCard className="bg-primary text-white rounded-3xl p-8 relative overflow-hidden">

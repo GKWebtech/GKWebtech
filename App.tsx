@@ -11,6 +11,10 @@ import { ScrollToTop } from './components/ScrollToTop';
 import { BrochureTemplate } from './components/BrochureTemplate';
 import { PortfolioPage } from './components/PortfolioPage';
 import { ProjectDetail } from './components/ProjectDetail';
+import { Tools } from './components/Tools';
+import { AyuuChatbot } from './components/AyuuChatbot';
+import CourseDetail from './components/CourseDetail';
+import { CoursesPage } from './components/CoursesPage';
 
 function App() {
   return (
@@ -30,10 +34,13 @@ function App() {
                   <Route path="/" element={<Home />} />
                   <Route path="/services" element={<ServicesPage />} />
                   <Route path="/service/:id" element={<ServiceDetail />} />
+                  <Route path="/courses" element={<CoursesPage />} />
+                  <Route path="/course/:id" element={<CourseDetail />} />
                   <Route path="/portfolio" element={<PortfolioPage />} />
                   <Route path="/portfolio/:id" element={<ProjectDetail />} />
                   <Route path="/blogs" element={<BlogsPage />} />
                   <Route path="/blog/:id" element={<BlogDetail />} />
+                  <Route path="/tools" element={<Tools />} />
                 </Routes>
               </main>
 
@@ -50,6 +57,8 @@ function App() {
                   className="w-12 h-12"
                 />
               </a>
+
+              <AyuuChatbot />
 
               <Footer />
             </>

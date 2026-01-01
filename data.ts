@@ -115,6 +115,199 @@ export const servicesData: Service[] = [
   }
 ];
 
+export const coursesData = [
+  {
+    id: "seo-optimization",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
+    detailImage: "https://images.unsplash.com/photo-1571786256017-aee7a0c009b6?auto=format&fit=crop&q=80&w=1600",
+    title: "SEO Optimization Training",
+    description: "3-month training + 6-month internship, certification included. Learn technical SEO, keyword strategy, and ranking growth.",
+    fullDescription: "Master SEO from basics to advanced ranking strategies. This course includes 3 months of structured training followed by a 6-month internship. Tenure may vary based on learning capabilities. Training certificate + Internship certificate provided. Contact for pricing.",
+    tenure: "3 months training + 6 months internship (duration may vary by candidate learning speed)",
+    certificates: [
+      "3-Month Training Certificate",
+      "6-Month Internship Certificate"
+    ],
+    pricingNote: "Contact us for pricing and enrollment details",
+    internship: "Includes 6-month internship after training. Internship tenure may vary depending on candidate learning capabilities.",
+    features: [
+      "SEO Fundamentals & Technical Audits",
+      "Keyword Research & Competitor Strategy",
+      "On-Page Optimization (Meta, Content, Structure)",
+      "Off-Page SEO & Authority Building",
+      "Live Internship With Real Projects",
+      "Certification & Pricing Guidance"
+    ],
+    cta: {
+      enrollText: "Enroll Now",
+      contactText: "Contact for Pricing"
+    }
+  },
+  {
+    id: "social-media-marketing",
+    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=800",
+    detailImage: "https://images.unsplash.com/photo-1611926653458-09294b3142bf?auto=format&fit=crop&q=80&w=1600",
+    title: "Social Media Marketing Training",
+    description: "3-month training + 6-month internship, certificate included. Learn growth, reels, content & paid campaigns.",
+    fullDescription: "Become a social media expert. Learn Instagram, LinkedIn, TikTok, Twitter growth strategies + reels, psychology-based content, and paid ads integration. 3 months training followed by live internship. Internship tenure may vary based on learning pace. Training certificate + Internship certificate provided. Contact for pricing.",
+    tenure: "3 months training + 6 months internship (may vary by candidate learning capabilities)",
+    certificates: [
+      "Social Media Training Certificate",
+      "Internship Experience Certificate"
+    ],
+    pricingNote: "Contact for pricing and plan details",
+    internship: "6-month internship included after training. Duration may vary based on candidate learning speed.",
+    features: [
+      "Platform-Wise Growth Strategy",
+      "Content & Reels Training",
+      "Community Management",
+      "Influencer & Trend Research",
+      "Paid Campaign Execution in Internship",
+      "Certificate + Pricing Support"
+    ],
+    cta: {
+      enrollText: "Start Learning",
+      contactText: "Contact for Pricing"
+    }
+  },
+  {
+    id: "content-strategy",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800",
+    detailImage: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=1600",
+    title: "Content Strategy & Branding Training",
+    description: "3-month training + 6-month internship, certification included. Learn copywriting, branding, and content psychology.",
+    fullDescription: "Learn to build a brand using powerful content. Includes 3 months of guided training and 6-month internship. Internship tenure may vary based on learning pace. Training certificate + Internship certificate provided. Contact for pricing.",
+    tenure: "3 months training + 6 months internship (duration may vary based on candidate learning speed)",
+    certificates: [
+      "Content Strategy Training Certificate",
+      "Internship Certificate"
+    ],
+    pricingNote: "Contact for pricing and enrollment details",
+    internship: "6-month internship included after training. Internship tenure may vary based on candidate learning pace.",
+    features: [
+      "Brand Identity & Voice",
+      "Copywriting & Web Content",
+      "Visual Storytelling",
+      "Infographic Content",
+      "Newsletter & Campaign Writing",
+      "Live Internship + Certificate + Pricing Support"
+    ],
+    cta: {
+      enrollText: "Join Course",
+      contactText: "Contact for Pricing"
+    }
+  },
+  {
+    id: "google-meta-ads",
+    image: "https://images.unsplash.com/photo-1533750516457-a7f992034fec?auto=format&fit=crop&q=80&w=800",
+    detailImage: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&q=80&w=1600",
+    title: "Google & Meta Ads Training",
+    description: "3-month PPC training + 6-month internship, certificate included. Learn paid media, CPA, ROAS, A/B testing.",
+    fullDescription: "Learn to run profitable PPC campaigns. Includes 3 months of training and live internship. Internship tenure may vary based on learning speed. PPC training certificate + Internship certificate provided. Contact for pricing.",
+    tenure: "3 months training + 6 months internship (may vary by learning capabilities)",
+    certificates: [
+      "Paid Media Training Certificate",
+      "Internship Certificate"
+    ],
+    pricingNote: "Contact for pricing and campaign plans",
+    internship: "6-month internship included after training. Duration may vary based on candidate learning pace.",
+    features: [
+      "Google Ads Search & Display",
+      "Meta Ads Fundamentals",
+      "Retargeting & A/B Testing",
+      "Conversion Tracking",
+      "Live Internship Projects",
+      "Certificate + Pricing Support"
+    ],
+    cta: {
+      enrollText: "Start Course",
+      contactText: "Contact for Pricing"
+    }
+  },
+  {
+    id: "campaign-planning",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
+    detailImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1600",
+    title: "Campaign Planning & Analytics Training",
+    description: "3-month training + 6-month internship, certification included. Learn full-funnel strategy, KPIs, dashboards.",
+    fullDescription: "Learn data-driven campaign planning. 3 months training + internship. Internship tenure may vary based on learning pace. Campaign planning certificate + Internship certificate provided. Contact for pricing.",
+    tenure: "3 months training + 6 months internship (may vary by candidate learning pace)",
+    certificates: [
+      "Analytics Training Certificate",
+      "Internship Certificate"
+    ],
+    pricingNote: "Contact for pricing and KPI plans",
+    internship: "6-month internship included after training. Internship tenure may vary based on candidate learning capabilities.",
+    features: [
+      "Full Funnel Strategy",
+      "Customer Journey Mapping",
+      "GA4 Training",
+      "Dashboard & KPI Setup",
+      "Internship With Live Projects",
+      "Certificate + Pricing Support"
+    ],
+    cta: {
+      enrollText: "Join Analytics Course",
+      contactText: "Contact for Pricing"
+    }
+  },
+  {
+    id: "website-management",
+    image: "https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&q=80&w=800",
+    detailImage: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&q=80&w=1600",
+    title: "Website Management & WordPress Training",
+    description: "3-month training + 6-month internship, certification included. Learn hosting, migrations, security & updates.",
+    fullDescription: "Learn WordPress management. 3 months training + internship. Internship tenure may vary based on learning speed. Website training certificate + Internship certificate provided. Contact for pricing.",
+    tenure: "3 months training + 6 months internship (may vary by learning pace)",
+    certificates: [
+      "WordPress Training Certificate",
+      "Internship Certificate"
+    ],
+    pricingNote: "Contact for pricing and hosting plans",
+    internship: "6-month internship included after training. Internship tenure may vary based on learning capabilities.",
+    features: [
+      "WP Theme & Plugin Management",
+      "Hosting & Migration",
+      "Security Monitoring",
+      "Live Internship Projects",
+      "Certificate + Pricing Support",
+      "Pricing & Plan Guidance"
+    ],
+    cta: {
+      enrollText: "Start WordPress Course",
+      contactText: "Contact for Pricing"
+    }
+  },
+  {
+    id: "creative-design",
+    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800",
+    detailImage: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=1600",
+    title: "Creative Ad Design, Reels & Video Editing Training",
+    description: "3-month creative training + 6-month internship, certificate included. Learn banners, reels, editing & thumbnails.",
+    fullDescription: "Learn creative ad design + reels + video editing. 3 months training + live internship. Internship tenure may vary by learning pace. Creative certificate + Internship certificate provided. Contact for pricing.",
+    tenure: "3 months training + 6 months internship (duration may vary by candidate learning pace)",
+    certificates: [
+      "Creative Design & Reels Certificate",
+      "Internship Certificate"
+    ],
+    pricingNote: "Contact for pricing and creative plans",
+    internship: "6-month internship included after training. Internship tenure may vary based on candidate learning speed.",
+    features: [
+      "Social Graphics & Templates",
+      "Reels & Shorts Creation",
+      "Video Editing & Motion Graphics",
+      "Banners & Thumbnails",
+      "Live Internship With Projects",
+      "Certificate + Pricing Support"
+    ],
+    cta: {
+      enrollText: "Start Creative Course",
+      contactText: "Contact for Pricing"
+    }
+  }
+];
+
+
 export const blogsData: BlogPost[] = [
   {
     id: "future-of-seo-ai",
@@ -277,8 +470,8 @@ export const projectsData: Project[] = [
     location: "Kishanpur, Alwar, Rajasthan",
     category: "Luxury Palace Shoot",
     description: "Capturing the regal essence of one of the best hidden gem of Rajasthan's culture. Our team delivered a comprehensive visual package for their digital rebranding.",
-    image: "/images/portfolio/Rambihari/20251213_230354.jpg",
-    mediaStats: { photos: 19, videos: 2 },
+    image: "/images/portfolio/Rambihari/Screenshot 2025-12-26 091754.png",
+    mediaStats: { photos: 20, videos: 1 },
     tags: ["Luxury", "Interior", "Royality", "Lifestyle", "Hospitality"],
     client: "Rambihari Palace A Luxury Hotel",
     duration: "1 Week",
@@ -290,7 +483,7 @@ export const projectsData: Project[] = [
       author: "Mr. Ram Kaushik",
       role: "Owner"
     },
-    gallery: ["/images/portfolio/Rambihari/IMG_0448.JPG", "/images/portfolio/Rambihari/6.1.jpg", "/images/portfolio/Rambihari/9.1.jpg", "/images/portfolio/Rambihari/20251213_224325.jpg", "/images/portfolio/Rambihari/IMG_0336.JPG", "/images/portfolio/Rambihari/IMG_0385.png", "/images/portfolio/Rambihari/IMG_0408.png", "/images/portfolio/Rambihari/IMG_0435.JPG", "/images/portfolio/Rambihari/IMG_0437.png", "/images/portfolio/Rambihari/IMG_0448.JPG",, "/images/portfolio/Rambihari/IMG_0545.JPG", "/images/portfolio/Rambihari/IMG_0551.png", "/images/portfolio/Rambihari/IMG_0592.JPG", "/images/portfolio/Rambihari/IMG_0633.JPG", "/images/portfolio/Rambihari/IMG_0639.JPG", "/images/portfolio/Rambihari/IMG_0648.JPG", "/images/portfolio/Rambihari/IMG_0651.png", "/images/portfolio/Rambihari/IMG_0653.JPG", "/images/portfolio/Rambihari/IMG_0654.JPG"],
+    gallery: ["/images/portfolio/Rambihari/Screenshot 2025-12-26 092042.png", "/images/portfolio/Rambihari/Screenshot 2025-12-26 094141.png", "/images/portfolio/Rambihari/Screenshot 2025-12-26 091627.png", "/images/portfolio/Rambihari/Screenshot 2025-12-26 091646.png", "/images/portfolio/Rambihari/Screenshot 2025-12-26 091702.png", "/images/portfolio/Rambihari/Screenshot 2025-12-26 091718.png", "/images/portfolio/Rambihari/Screenshot 2025-12-26 091730.png", "/images/portfolio/Rambihari/Screenshot 2025-12-26 091754.png", "/images/portfolio/Rambihari/Screenshot 2025-12-26 091815.png", "/images/portfolio/Rambihari/Screenshot 2025-12-26 091831.png", "/images/portfolio/Rambihari/Screenshot 2025-12-26 091854.png",, "/images/portfolio/Rambihari/Screenshot 2025-12-26 091911.png", "/images/portfolio/Rambihari/Screenshot 2025-12-26 091922.png", "/images/portfolio/Rambihari/Screenshot 2025-12-26 091935.png", "/images/portfolio/Rambihari/Screenshot 2025-12-26 091952.png", "/images/portfolio/Rambihari/Screenshot 2025-12-26 092008.png", "/images/portfolio/Rambihari/Screenshot 2025-12-26 092029.png", "/images/portfolio/Rambihari/Screenshot 2025-12-26 091500.png", "/images/portfolio/Rambihari/Screenshot 2025-12-26 092051.png", "/images/portfolio/Rambihari/Screenshot 2025-12-26 092106.png"],
     youtubeIds: []
   },
   {
@@ -299,7 +492,7 @@ export const projectsData: Project[] = [
     location: "Dadikar, Rajasthan",
     category: "Luxury Fort Shoot",
     description: "An evocative outdoor shoot capturing the golden hour at the majestic Dadikar Fort, designed to promote destination weddings and cultural tourism.",
-    image: "https://images.unsplash.com/photo-1566373738875-d6874e0d9956?q=80&w=1200&auto=format&fit=crop",
+    image: "/images/portfolio/Dadikar_Fort/Screenshot 2026-01-01 123815.png",
     mediaStats: { photos: 10, videos: 2 },
     tags: ["Travel", "Culture", "Luxury", "Outdoor"],
     client: "Dadhikar Fort & Resorts Private Limited",
@@ -307,11 +500,7 @@ export const projectsData: Project[] = [
     challenge: "To promote Dadikar Fort as a premier wedding destination while respecting its cultural heritage.",
     solution: "We utilized natural lighting during golden hour to create a romantic, dream-like atmosphere, integrating traditional attire with the historic backdrop.",
     results: ["Top Trending Travel Reel in India", "15% Rise in Pre-wedding Shoot Inquiries"],
-    gallery: [
-       "https://images.unsplash.com/photo-1598556776374-0a86b51c8888?q=80&w=800",
-       "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?q=80&w=800",
-       "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?q=80&w=800"
-    ],
+    gallery: [],
     youtubeIds: [ 
         "https://assets.mixkit.co/videos/preview/mixkit-woman-walking-on-a-beach-at-sunset-4638-large.mp4"
     ]
@@ -322,7 +511,7 @@ export const projectsData: Project[] = [
     location: "Jaipur, Rajasthan",
     category: "Wellness Retreat Marketing",
     description: "High-energy event coverage for Jaipur's premier wellness retreat, delivering real-time social media content.",
-    image: "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=1200&auto=format&fit=crop",
+    image: "/images/portfolio/BambooSa-Sunrise-Resort/Screenshot 2026-01-01 123528.png",
     mediaStats: { photos: 10, videos: 2 },
     tags: ["Wellness", "Nature", "Amenities"],
     client: "Mr. V.K. Agarwal",
@@ -330,11 +519,7 @@ export const projectsData: Project[] = [
     challenge: "Capturing the nature in a resort based in the capital of Rajasthan and delivering edited content in near real-time for social media.",
     solution: "We deployed a 5-person team with on-site editors. Ensuring maximum social buzz.",
     results: ["5M+ Hashtag Reach", "Live Stream viewed by 50k people"],
-    gallery: [
-       "https://images.unsplash.com/photo-1537832816519-689ad163238b?q=80&w=800",
-       "https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=800",
-       "https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?q=80&w=800"
-    ]
+    gallery: ["/images/portfolio/BambooSa-Sunrise-Resort/Screenshot 2026-01-01 122527.png", "/images/portfolio/BambooSa-Sunrise-Resort/Screenshot 2026-01-01 122621.png", "/images/portfolio/BambooSa-Sunrise-Resort/Screenshot 2026-01-01 122640.png", "/images/portfolio/BambooSa-Sunrise-Resort/Screenshot 2026-01-01 122658.png", "/images/portfolio/BambooSa-Sunrise-Resort/Screenshot 2026-01-01 122710.png"]
   }
 ];
 
