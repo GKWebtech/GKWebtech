@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.gajkesari.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <lastmod>2026-01-03</lastmod>
+  </url>
+  <url>
+    <loc>https://www.gajkesari.com/services</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-01-03</lastmod>
+  </url>
+  <url>
+    <loc>https://www.gajkesari.com/courses</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-01-03</lastmod>
+  </url>
+  <url>
+    <loc>https://www.gajkesari.com/portfolio</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-01-03</lastmod>
+  </url>
+  <url>
+    <loc>https://www.gajkesari.com/blogs</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-01-03</lastmod>
+  </url>
+  <url>
+    <loc>https://www.gajkesari.com/tools</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+    <lastmod>2026-01-03</lastmod>
+  </url>
+  <url>
+    <loc>https://www.gajkesari.com/terms</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <lastmod>2026-01-03</lastmod>
+  </url>
+  <url>
+    <loc>https://www.gajkesari.com/privacy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <lastmod>2026-01-03</lastmod>
+  </url>
+  <!-- Services -->
+  <url><loc>https://www.gajkesari.com/service/seo-optimization</loc><changefreq>monthly</changefreq><priority>0.6</priority><lastmod>2026-01-03</lastmod></url>
+  <url><loc>https://www.gajkesari.com/service/social-media-marketing</loc><changefreq>monthly</changefreq><priority>0.6</priority><lastmod>2026-01-03</lastmod></url>
+  <url><loc>https://www.gajkesari.com/service/content-strategy</loc><changefreq>monthly</changefreq><priority>0.6</priority><lastmod>2026-01-03</lastmod></url>
+  <url><loc>https://www.gajkesari.com/service/google-meta-ads</loc><changefreq>monthly</changefreq><priority>0.6</priority><lastmod>2026-01-03</lastmod></url>
+  <url><loc>https://www.gajkesari.com/service/campaign-planning</loc><changefreq>monthly</changefreq><priority>0.6</priority><lastmod>2026-01-03</lastmod></url>
+  <url><loc>https://www.gajkesari.com/service/website-management</loc><changefreq>monthly</changefreq><priority>0.6</priority><lastmod>2026-01-03</lastmod></url>
+  <url><loc>https://www.gajkesari.com/service/creative-design</loc><changefreq>monthly</changefreq><priority>0.6</priority><lastmod>2026-01-03</lastmod></url>
+  <!-- Courses -->
+  <url><loc>https://www.gajkesari.com/course/seo-optimization</loc><changefreq>monthly</changefreq><priority>0.6</priority><lastmod>2026-01-03</lastmod></url>
+  <url><loc>https://www.gajkesari.com/course/social-media-marketing</loc><changefreq>monthly</changefreq><priority>0.6</priority><lastmod>2026-01-03</lastmod></url>
+  <url><loc>https://www.gajkesari.com/course/content-strategy</loc><changefreq>monthly</changefreq><priority>0.6</priority><lastmod>2026-01-03</lastmod></url>
+  <url><loc>https://www.gajkesari.com/course/google-meta-ads</loc><changefreq>monthly</changefreq><priority>0.6</priority><lastmod>2026-01-03</lastmod></url>
+  <url><loc>https://www.gajkesari.com/course/campaign-planning</loc><changefreq>monthly</changefreq><priority>0.6</priority><lastmod>2026-01-03</lastmod></url>
+  <url><loc>https://www.gajkesari.com/course/website-management</loc><changefreq>monthly</changefreq><priority>0.6</priority><lastmod>2026-01-03</lastmod></url>
+  <url><loc>https://www.gajkesari.com/course/creative-design</loc><changefreq>monthly</changefreq><priority>0.6</priority><lastmod>2026-01-03</lastmod></url>
+  <!-- Blogs -->
+  <url><loc>https://www.gajkesari.com/blog/future-of-seo-ai</loc><changefreq>weekly</changefreq><priority>0.5</priority><lastmod>2026-01-03</lastmod></url>
+  <url><loc>https://www.gajkesari.com/blog/maximizing-roi-instagram-ads</loc><changefreq>weekly</changefreq><priority>0.5</priority><lastmod>2026-01-03</lastmod></url>
+  <url><loc>https://www.gajkesari.com/blog/content-strategy-converts</loc><changefreq>weekly</changefreq><priority>0.5</priority><lastmod>2026-01-03</lastmod></url>
+  <url><loc>https://www.gajkesari.com/blog/wordpress-security-essentials</loc><changefreq>weekly</changefreq><priority>0.5</priority><lastmod>2026-01-03</lastmod></url>
+  <url><loc>https://www.gajkesari.com/blog/power-of-email-marketing</loc><changefreq>weekly</changefreq><priority>0.5</priority><lastmod>2026-01-03</lastmod></url>
+  <!-- Portfolio projects (URL-encoded IDs) -->
+  <url><loc>https://www.gajkesari.com/portfolio/Nirvanavan%20Foundation</loc><changefreq>monthly</changefreq><priority>0.5</priority><lastmod>2026-01-03</lastmod></url>
+  <url><loc>https://www.gajkesari.com/portfolio/Rambihari%20Palace</loc><changefreq>monthly</changefreq><priority>0.5</priority><lastmod>2026-01-03</lastmod></url>
+  <url><loc>https://www.gajkesari.com/portfolio/Dadikar%20Fort</loc><changefreq>monthly</changefreq><priority>0.5</priority><lastmod>2026-01-03</lastmod></url>
+  <url><loc>https://www.gajkesari.com/portfolio/Bamboo%20Saa%20Resort%20%26%20Spa</loc><changefreq>monthly</changefreq><priority>0.5</priority><lastmod>2026-01-03</lastmod></url>
+</urlset>
+

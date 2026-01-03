@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { blogsData } from '../data';
 import { ArrowLeft, User, Calendar, Clock, Facebook, Twitter, Linkedin, Share2 } from 'lucide-react';
+import { Seo } from './Seo';
 
 export const BlogDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -22,6 +23,22 @@ export const BlogDetail: React.FC = () => {
 
   return (
     <div className="pt-24 pb-20 bg-bg-light dark:bg-gray-950 min-h-screen transition-colors">
+      <Seo
+        title={`${blog.title} | Gajkesari Digital Agency`}
+        description={blog.excerpt}
+        keywords={(blog.tags || []).join(', ')}
+        canonical={window.location.href}
+        image={blog.image}
+        type="article"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": blog.title,
+          "image": [blog.image],
+          "author": {"@type":"Person","name": blog.author},
+          "datePublished": blog.date
+        }}
+      />
       
       {/* Article Header Background */}
       <div className="w-full h-[40vh] md:h-[50vh] relative overflow-hidden">

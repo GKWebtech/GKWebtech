@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { servicesData } from '../data';
 import { TiltCard } from './TiltCard';
 import { ArrowRight } from 'lucide-react';
+import { Seo } from './Seo';
 
 export const ServicesPage: React.FC = () => {
   // Ensure we start at the top when navigating here
@@ -12,6 +13,14 @@ export const ServicesPage: React.FC = () => {
 
   return (
     <div className="pt-32 pb-20 bg-bg-light dark:bg-gray-950 min-h-screen transition-colors">
+      <Seo
+        title="Services | Gajkesari Digital Agency"
+        description="SEO, social media, content strategy, Google & Meta ads, analytics, WordPress, and creative design."
+        keywords="services, SEO, social media, PPC, analytics, WordPress, creative design"
+        canonical={`${window.location.origin}/services`}
+        image={`${window.location.origin}/images/logo.png`}
+        type="website"
+      />
       <div className="container mx-auto px-4 md:px-6">
         
         {/* Page Header */}
@@ -42,6 +51,7 @@ export const ServicesPage: React.FC = () => {
                                 <img 
                                     src={service.image} 
                                     alt={service.title} 
+                                    loading="lazy"
                                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" 
                                 />
                                 <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-300"></div>

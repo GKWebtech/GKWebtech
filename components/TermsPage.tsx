@@ -1,8 +1,17 @@
 import React from 'react';
+import { Seo } from './Seo';
 
 export const TermsPage: React.FC = () => {
   return (
     <div className="pt-32 pb-20 bg-bg-light dark:bg-gray-950 min-h-screen transition-colors">
+      <Seo
+        title="Terms & Conditions | Gajkesari Digital Agency"
+        description="Read the terms and conditions governing services, training, communication consent, payments, and liability."
+        keywords="terms, conditions, policy, payments, liability, internship, training"
+        canonical={`${window.location.origin}/terms`}
+        image={`${window.location.origin}/images/logo.png`}
+        type="website"
+      />
       <div className="container mx-auto px-4 md:px-6 max-w-3xl">
         <h1 className="text-4xl font-bold text-primary dark:text-white mb-6">Terms and Conditions — GAJKESARI Digital</h1>
         <div className="prose dark:prose-invert max-w-none leading-relaxed text-gray-700 dark:text-gray-300">

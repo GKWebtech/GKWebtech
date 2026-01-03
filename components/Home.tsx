@@ -12,6 +12,7 @@ import { Contact } from './Contact';
 import { Testimonials } from './Testimonials';
 import { Blog } from './Blog';
 import { FAQ } from './FAQ';
+import { Seo } from './Seo';
 
 export const Home: React.FC = () => {
   const location = useLocation();
@@ -41,6 +42,20 @@ export const Home: React.FC = () => {
 
   return (
     <>
+        <Seo
+          title="Gajkesari Digital Agency | Digital Marketing & Corporate Training"
+          description="Data-driven SEO, PPC, social media, web development, and training to scale your brand."
+          keywords="Gajkesari, digital marketing agency, SEO, PPC, social media, web development, corporate training"
+          canonical={`${window.location.origin}/`}
+          image={`${window.location.origin}/images/logo.png`}
+          type="website"
+          structuredData={{
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Gajkesari Digital Agency",
+            "url": `${window.location.origin}/`
+          }}
+        />
         <Hero />
         <Ticker />
         <Services />

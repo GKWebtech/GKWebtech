@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { TiltCard } from './TiltCard';
 import { ArrowRight, Play, Image as ImageIcon, MapPin, ArrowLeft } from 'lucide-react';
 import { projectsData } from '../data';
+import { Seo } from './Seo';
 
 export const PortfolioPage: React.FC = () => {
   useEffect(() => {
@@ -11,6 +12,20 @@ export const PortfolioPage: React.FC = () => {
 
   return (
     <div className="pt-32 pb-20 bg-bg-light dark:bg-gray-950 min-h-screen transition-colors">
+      <Seo
+        title="Portfolio | Gajkesari Digital Agency"
+        description="Case studies and visual campaigns across hospitality, wellness, events, and more."
+        keywords="portfolio, case studies, photography, videography, branding, hospitality, wellness"
+        canonical={`${window.location.origin}/portfolio`}
+        image={`${window.location.origin}/images/logo.png`}
+        type="website"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "name": "Portfolio",
+          "url": `${window.location.origin}/portfolio`
+        }}
+      />
       <div className="container mx-auto px-4 md:px-6">
         
         {/* Back Button */}
@@ -50,6 +65,7 @@ export const PortfolioPage: React.FC = () => {
                     <img 
                         src={project.image} 
                         alt={project.title} 
+                        loading="lazy"
                         className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                     />
                     

@@ -3,6 +3,7 @@ import { useParams, Link, useNavigate, useLocation } from 'react-router-dom';
 import { ArrowLeft, MapPin, Calendar, CheckCircle, Quote, Maximize2, X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { TiltCard } from './TiltCard';
 import { projectsData } from '../data';
+import { Seo } from './Seo';
 
 export const ProjectDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -57,6 +58,22 @@ export const ProjectDetail: React.FC = () => {
 
   return (
     <>
+      <Seo
+        title={`${project.title} | Gajkesari Digital Agency`}
+        description={project.description}
+        keywords={(project.tags || []).join(', ')}
+        canonical={`${window.location.origin}/portfolio/${encodeURIComponent(project.id)}`}
+        image={project.image}
+        type="website"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "CreativeWork",
+          "name": project.title,
+          "description": project.description,
+          "url": `${window.location.origin}/portfolio/${encodeURIComponent(project.id)}`,
+          "image": project.image
+        }}
+      />
       <div className="pt-24 pb-20 bg-bg-light dark:bg-gray-950 min-h-screen transition-colors">
 
         {/* Hero Header */}
@@ -99,9 +116,9 @@ export const ProjectDetail: React.FC = () => {
               id="gallery-scroll"
               className="flex gap-6 overflow-x-auto pb-6 snap-x snap-mandatory hide-scrollbar scroll-smooth"
             >
-              {galleryImages.map((img, idx) => (
-                <div key={idx} className="relative min-w-[280px] md:min-w-[400px] h-64 md:h-80 rounded-2xl overflow-hidden shadow-md group cursor-pointer border border-gray-200 dark:border-gray-800 snap-center">
-                  <img src={img} alt={`Gallery ${idx}`} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                {galleryImages.map((img, idx) => (
+                  <div key={idx} className="relative min-w-[280px] md:min-w-[400px] h-64 md:h-80 rounded-2xl overflow-hidden shadow-md group cursor-pointer border border-gray-200 dark:border-gray-800 snap-center">
+                  <img src={img} alt={`Gallery ${idx}`} loading="lazy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                     <button
                       onClick={(e) => { e.stopPropagation(); openFullScreenImage(img); }}

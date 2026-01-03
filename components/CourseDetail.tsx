@@ -5,6 +5,7 @@ import { useParams, useNavigate, Link } from "react-router-dom";
 import { ArrowLeft, CheckCircle, Download, ArrowRight, Mail } from "lucide-react";
 import { coursesData } from "../data";
 import { TiltCard } from "./TiltCard";
+import { Seo } from "./Seo";
 
 const CourseDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -28,6 +29,22 @@ const CourseDetail: React.FC = () => {
 
   return (
     <>
+      <Seo
+        title={`${course.title} | Gajkesari Digital Agency`}
+        description={course.description}
+        keywords={course.features.join(', ')}
+        canonical={`${window.location.origin}/course/${course.id}`}
+        image={course.detailImage}
+        type="product"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "Course",
+          "name": course.title,
+          "description": course.description,
+          "url": `${window.location.origin}/course/${course.id}`,
+          "image": course.detailImage
+        }}
+      />
       <div className="pt-24 pb-20 bg-bg-light dark:bg-gray-950 min-h-screen">
         {/* Hero Section */}
       <div className="relative h-[60vh] w-full overflow-hidden">

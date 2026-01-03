@@ -4,6 +4,7 @@ import { servicesData } from '../data';
 import { ArrowLeft, Check, Download, ArrowRight, Mail } from 'lucide-react';
 import { BrochureModal } from './BrochureModal';
 import { TiltCard } from './TiltCard';
+import { Seo } from './Seo';
 
 export const ServiceDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -28,6 +29,22 @@ export const ServiceDetail: React.FC = () => {
 
   return (
     <>
+      <Seo
+        title={`${service.title} | Gajkesari Digital Agency`}
+        description={service.description}
+        keywords={service.features.join(', ')}
+        canonical={`${window.location.origin}/service/${service.id}`}
+        image={service.detailImage}
+        type="product"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": service.title,
+          "description": service.description,
+          "url": `${window.location.origin}/service/${service.id}`,
+          "image": service.detailImage
+        }}
+      />
       <div className="pt-24 pb-20 bg-bg-light dark:bg-gray-950 min-h-screen">
         {/* Hero Header */}
         <div className="relative h-[60vh] w-full overflow-hidden">
@@ -76,7 +93,7 @@ export const ServiceDetail: React.FC = () => {
               <div className="bg-white dark:bg-gray-900 rounded-3xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-800">
                  <div className="grid grid-cols-2 h-64 md:h-80">
                     <div className="h-full">
-                       <img src={service.image} className="w-full h-full object-cover" alt="Detail 1" />
+                       <img src={service.image} className="w-full h-full object-cover" alt="Detail 1" loading="lazy" />
                     </div>
                     <div className="h-full bg-secondary/10 flex items-center justify-center p-8 text-center">
                        <div>

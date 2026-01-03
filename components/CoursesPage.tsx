@@ -5,6 +5,7 @@ import { SectionHeader } from "./SectionHeader";
 import { ArrowRight } from "lucide-react";
 import { TiltCard } from "./TiltCard";
 import { coursesData } from "../data";
+import { Seo } from "./Seo";
 
 export const CoursesPage: React.FC = () => {
   useEffect(() => {
@@ -13,6 +14,20 @@ export const CoursesPage: React.FC = () => {
 
   return (
     <div className="pt-32 pb-20 bg-[#F9FAFB] dark:bg-gray-950 min-h-screen transition-colors" id="courses-page">
+      <Seo
+        title="Courses | Gajkesari Digital Agency"
+        description="Industry-grade training with live internships in SEO, social media, PPC, content, and WordPress."
+        keywords="courses, training, internship, SEO training, PPC training, social media training, content strategy training, WordPress training"
+        canonical={`${window.location.origin}/courses`}
+        image={`${window.location.origin}/images/logo.png`}
+        type="website"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "name": "Courses",
+          "url": `${window.location.origin}/courses`
+        }}
+      />
       <div className="container mx-auto px-4 md:px-6">
 
         {/* Header */}
@@ -44,6 +59,7 @@ export const CoursesPage: React.FC = () => {
                       <img
                         src={course.image}
                         alt={course.title}
+                        loading="lazy"
                         className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                       />
                       <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-300"></div>

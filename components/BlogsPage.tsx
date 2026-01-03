@@ -4,6 +4,7 @@ import { blogsData } from '../data';
 import { ArrowRight, ArrowLeft, User, Clock } from 'lucide-react';
 import { SectionHeader } from './SectionHeader';
 import { TiltCard } from './TiltCard';
+import { Seo } from './Seo';
 
 export const BlogsPage: React.FC = () => {
   useEffect(() => {
@@ -12,6 +13,14 @@ export const BlogsPage: React.FC = () => {
 
   return (
     <div className="pt-32 pb-20 bg-bg-light dark:bg-gray-950 min-h-screen transition-colors">
+      <Seo
+        title="Blog | Gajkesari Digital Agency"
+        description="Insights on SEO, social media, PPC, content strategy, and web development."
+        keywords="blog, SEO trends, social media, PPC, content strategy, web development"
+        canonical={`${window.location.origin}/blogs`}
+        image={`${window.location.origin}/images/logo.png`}
+        type="website"
+      />
       <div className="container mx-auto px-4 md:px-6">
         <div className="mb-6">
           <Link to="/" className="inline-flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-secondary transition-colors backdrop-blur-sm bg-black/5 dark:bg-white/5 px-4 py-2 rounded-full">
@@ -49,6 +58,7 @@ export const BlogsPage: React.FC = () => {
                        <img 
                          src={blog.image} 
                          alt={blog.title} 
+                         loading="lazy"
                          className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" 
                        />
                        <div className="absolute top-4 left-4 bg-secondary text-primary px-3 py-1 rounded-full text-xs font-bold shadow-md">
