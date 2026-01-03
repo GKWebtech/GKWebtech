@@ -122,14 +122,6 @@ export const ServiceDetail: React.FC = () => {
                      <span>Contact Us</span>
                      <Mail size={18} />
                    </button>
-                   
-                   <button 
-                      onClick={() => setIsModalOpen(true)}
-                      className="bg-white/10 border border-white/20 text-white w-full py-3 px-6 rounded-full font-bold flex items-center justify-center gap-2 hover:bg-white/20 transition-colors"
-                    >
-                     <span>Download Brochure</span>
-                     <Download size={18} />
-                   </button>
                  </div>
               </TiltCard>
 
