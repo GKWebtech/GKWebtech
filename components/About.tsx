@@ -10,12 +10,12 @@ export const About: React.FC = () => {
   };
 
   return (
-    <section className="py-20 bg-primary text-white" id="about">
+    <section className="py-20 bg-primary text-white xl:mx-[-2rem] 2xl:mx-[-4rem]" id="about">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex flex-col lg:flex-row items-center gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
            
            {/* Left Image Circle */}
-           <div className="relative flex-shrink-0">
+           <div className="relative flex-shrink-0 mx-auto justify-self-center">
               <div className="w-72 h-72 md:w-96 md:h-96 rounded-full border-4 border-secondary p-2 relative z-10">
                  <img 
                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop" 
@@ -41,7 +41,7 @@ export const About: React.FC = () => {
            </div>
 
            {/* Right Content */}
-           <div className="flex-1">
+           <div className="flex-1 max-w-2xl xl:max-w-3xl w-full">
               <div className="flex items-center gap-3 mb-4">
                 <span className="h-0.5 w-4 bg-secondary"></span>
                 <span className="text-sm font-semibold uppercase tracking-wider text-secondary">

@@ -29,7 +29,7 @@ export const FAQ: React.FC = () => {
   const [openIndex, setOpenIndex] = useState(1); // Default open second item as per design
 
   return (
-    <section className="py-20 bg-primary" id="faq">
+    <section className="py-20 bg-primary xl:mx-[-2rem] 2xl:mx-[-4rem]" id="faq">
       <div className="container mx-auto px-4 md:px-6">
         <SectionHeader 
            label="Common Queries" 

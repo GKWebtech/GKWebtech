@@ -2,10 +2,10 @@ import React from 'react';
 import { Asterisk } from 'lucide-react';
 
 export const Ticker: React.FC = () => {
-  const items = ["SEO Optimization", "Social Media", "Content Marketing", "PPC Advertising", "Brand Strategy", "Email Marketing", "Growth Hacking", "Analytics"];
+  const items = ["SEO Optimization", "Social Media Marketing", "Content Strategy & Analysis", "Google & Meta Ads", "Campaign Planning & Analytics", "Website Management", "Creative Reels"];
 
   return (
-    <div className="bg-secondary py-6 overflow-hidden relative transform -skew-y-1 origin-bottom-left md:skew-y-0">
+    <div className="bg-secondary py-6 overflow-hidden relative transform -skew-y-1 origin-bottom-left md:skew-y-0 xl:mx-[-2rem] 2xl:mx-[-4rem]">
        <div className="absolute inset-0 bg-primary opacity-0 md:hidden"></div> {/* Mobile adjustment if needed */}
        <div className="flex gap-12 whitespace-nowrap animate-marquee items-center">
          {[...items, ...items, ...items].map((item, index) => (

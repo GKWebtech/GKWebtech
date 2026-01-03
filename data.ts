@@ -316,7 +316,7 @@ export const blogsData: BlogPost[] = [
     title: 'The Future of SEO: AI and Voice Search Trends',
     image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=2070&auto=format&fit=crop',
     excerpt: 'Explore how Artificial Intelligence and voice search are reshaping the landscape of Search Engine Optimization in 2024.',
-    author: 'Vikram Rathore',
+    author: 'Dr. Anuj Tiwari',
     readTime: '5 min read',
     tags: ['AI', 'SEO', 'Technology', 'Trends'],
     content: `
@@ -345,7 +345,7 @@ export const blogsData: BlogPost[] = [
     title: 'Maximizing ROI on Instagram Ads in 2024',
     image: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=2055&auto=format&fit=crop',
     excerpt: 'Learn the latest strategies to lower your CPA and increase engagement with high-converting Instagram ad creatives.',
-    author: 'Emily Chen',
+    author: 'Vanshika Joshi',
     readTime: '4 min read',
     tags: ['Social Media', 'Ads', 'Instagram', 'ROI'],
     content: `
@@ -372,7 +372,7 @@ export const blogsData: BlogPost[] = [
     title: 'How to Build a Content Strategy That Converts',
     image: 'https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=2064&auto=format&fit=crop',
     excerpt: 'Stop creating content for the sake of it. Here is a blueprint for a content funnel that turns readers into buyers.',
-    author: 'Sarah Jenkins',
+    author: 'Dr. Anuj Tiwari',
     readTime: '6 min read',
     tags: ['Content', 'Marketing', 'Strategy', 'Funnel'],
     content: `
@@ -397,7 +397,7 @@ export const blogsData: BlogPost[] = [
     title: 'WordPress Security Essentials for 2024',
     image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop',
     excerpt: 'Protect your business assets with these critical security measures for your WordPress website.',
-    author: 'Rohan Gupta',
+    author: 'Utkarsh Sharma',
     readTime: '7 min read',
     tags: ['WordPress', 'Security', 'Web Dev', 'Cybersecurity'],
     content: `
@@ -422,7 +422,7 @@ export const blogsData: BlogPost[] = [
     title: 'Why Email Marketing Still Deliver the Best ROI',
     image: 'https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?q=80&w=2070&auto=format&fit=crop',
     excerpt: 'Despite the rise of social media, email remains the most effective channel for direct sales and customer retention.',
-    author: 'Emily Chen',
+    author: 'Vanshika Joshi',
     readTime: '4 min read',
     tags: ['Email', 'Marketing', 'Retention', 'ROI'],
     content: `

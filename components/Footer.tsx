@@ -1,10 +1,10 @@
 import React from 'react';
-import { Facebook, Instagram, Youtube, Linkedin, FileText } from 'lucide-react';
+import { Instagram, Youtube, Linkedin, FileText } from 'lucide-react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 
 // Embedded SVG Data URI for Gajkesri Logo
-const LOGO_SRC = "/images/logo.png";
+const LOGO_SRC = "/images/logo-footer.png";
 
 export const Footer: React.FC = () => {
   return (
@@ -32,26 +32,22 @@ export const Footer: React.FC = () => {
                A premier digital marketing agency helping businesses grow through data-driven strategies and creative excellence.
              </p>
              <div className="flex gap-4">
-               {/* Facebook */}
-               <a href="#" aria-label="Facebook" className="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 text-primary dark:text-white flex items-center justify-center hover:bg-secondary hover:text-primary transition-all">
-                 <Facebook size={18} />
-               </a>
                {/* YouTube */}
-               <a href="https://www.youtube.com/@GajkesriDigitalAgency" aria-label="YouTube" className="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 text-primary dark:text-white flex items-center justify-center hover:bg-secondary hover:text-primary transition-all">
+               <a href="https://www.youtube.com/@GK-Webtech" aria-label="YouTube" className="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 text-primary dark:text-white flex items-center justify-center hover:bg-secondary hover:text-primary transition-all">
                  <Youtube size={18} />
                </a>
                {/* X (formerly Twitter) */}
-               <a href="#" aria-label="X" className="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 text-primary dark:text-white flex items-center justify-center hover:bg-secondary hover:text-primary transition-all">
+               <a href="https://x.com/InfoGkWebTech" aria-label="X" className="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 text-primary dark:text-white flex items-center justify-center hover:bg-secondary hover:text-primary transition-all">
                  <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
                     <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                  </svg>
                </a>
                {/* Instagram */}
-               <a href="https://www.instagram.com/gajkesritech/" aria-label="Instagram" className="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 text-primary dark:text-white flex items-center justify-center hover:bg-secondary hover:text-primary transition-all">
+               <a href="https://www.instagram.com/gkwebtech/" aria-label="Instagram" className="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 text-primary dark:text-white flex items-center justify-center hover:bg-secondary hover:text-primary transition-all">
                  <Instagram size={18} />
                </a>
                {/* LinkedIn */}
-               <a href="https://www.linkedin.com/in/gajkesri-digital-agency-5412643a0/" aria-label="LinkedIn" className="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 text-primary dark:text-white flex items-center justify-center hover:bg-secondary hover:text-primary transition-all">
+               <a href="https://www.linkedin.com/company/gajkesri-webtech/" aria-label="LinkedIn" className="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 text-primary dark:text-white flex items-center justify-center hover:bg-secondary hover:text-primary transition-all">
                  <Linkedin size={18} />
                </a>
              </div>
@@ -83,7 +79,7 @@ export const Footer: React.FC = () => {
                  </li>
               <li className="flex items-start gap-3">
                  <span className="font-bold text-secondary">E:</span>
-                 <a href="mailto:info@ayurvedastro.com" className="hover:text-secondary transition-colors">info@ayurvedastro.com</a>
+                 <a href="mailto:info@gkwebtech.cloud" className="hover:text-secondary transition-colors">info@gkwebtech.cloud</a>
               </li>
               <li className="flex items-start gap-3">
                  <span className="font-bold text-secondary flex-shrink-0 mt-1">A:</span>
@@ -101,11 +97,11 @@ export const Footer: React.FC = () => {
            <p>Copyright © 2024 <span className="text-primary dark:text-white font-medium">Gajkesri Webtech</span>. All Rights Reserved.</p>
            <div className="flex items-center gap-6">
              <Link to="/" className="flex items-center gap-1 hover:text-secondary transition-colors" title="Download Brochure PDF">
-               <FileText size={12} />
-               <span>Brochure</span>
+               <FileText size={0} />
+               <span></span>
              </Link>
-             <a href="#" className="hover:text-secondary transition-colors">Terms & Conditions</a>
-             <a href="#" className="hover:text-secondary transition-colors">Privacy Policy</a>
+             <Link to="/terms" target="_blank" className="hover:text-secondary transition-colors">Terms & Conditions</Link>
+             <Link to="/privacy" target="_blank" className="hover:text-secondary transition-colors">Privacy Policy</Link>
            </div>
         </div>
       </div>

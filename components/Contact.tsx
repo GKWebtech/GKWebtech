@@ -47,9 +47,9 @@ export const Contact: React.FC = () => {
   };
 
   return (
-    <section className="py-20 bg-secondary dark:bg-gray-900 transition-colors" id="contact">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+    <section className="py-20 bg-secondary dark:bg-gray-900 transition-colors xl:mx-[-2rem] 2xl:mx-[-4rem]" id="contact">
+      <div className="container mx-auto px-4 md:px-6 xl:px-12 2xl:px-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
 
           {/* Left Info Section */}
           <div className="lg:col-span-1">
@@ -84,7 +84,7 @@ export const Contact: React.FC = () => {
                 <div className="w-10 h-10 rounded-full bg-white dark:bg-gray-800 flex items-center justify-center text-primary dark:text-secondary shadow-sm">
                   <Mail size={20} />
                 </div>
-                <span className="text-primary dark:text-gray-200 font-bold">info@ayurvedastro.com</span>
+                <span className="text-primary dark:text-gray-200 font-bold">info@gkwebtech.cloud</span>
               </div>
 
               <div className="flex items-start gap-4">
@@ -107,7 +107,7 @@ export const Contact: React.FC = () => {
           </div>
 
           {/* Contact Form Section */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-1">
             <form className="space-y-6" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">

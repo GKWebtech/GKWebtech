@@ -26,6 +26,16 @@ export const Navbar: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (serviceOpen && dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setServiceOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [serviceOpen]);
+
   const toggleTheme = () => {
     if (isDark) {
       document.documentElement.classList.remove("dark");
@@ -62,8 +72,8 @@ export const Navbar: React.FC = () => {
   ];
 
   return (
-    <nav className="fixed w-full z-50 top-0 py-4 transition-all duration-300">
-      <div className="container mx-auto px-4 md:px-6">
+    <nav className="fixed inset-x-0 z-50 top-0 py-4 transition-all duration-300">
+      <div className="mx-auto max-w-screen-2xl px-4 md:px-6 xl:px-8 2xl:px-16">
         <div className={`flex justify-between items-center rounded-full px-3 pl-4 py-1.5 bg-[#1F4037] dark:bg-gray-900 shadow-xl border border-[#2D5C4B] dark:border-gray-700 w-full`}>
           
           {/* Logo */}

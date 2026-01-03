@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { blogsData } from '../data';
-import { ArrowRight, User, Clock } from 'lucide-react';
+import { ArrowRight, ArrowLeft, User, Clock } from 'lucide-react';
 import { SectionHeader } from './SectionHeader';
 import { TiltCard } from './TiltCard';
 
@@ -13,6 +13,12 @@ export const BlogsPage: React.FC = () => {
   return (
     <div className="pt-32 pb-20 bg-bg-light dark:bg-gray-950 min-h-screen transition-colors">
       <div className="container mx-auto px-4 md:px-6">
+        <div className="mb-6">
+          <Link to="/" className="inline-flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-secondary transition-colors backdrop-blur-sm bg-black/5 dark:bg-white/5 px-4 py-2 rounded-full">
+            <ArrowLeft size={16} />
+            <span>Back to Home</span>
+          </Link>
+        </div>
         
         {/* Page Header */}
         <div className="text-center mb-16 animate-fade-in-up">
