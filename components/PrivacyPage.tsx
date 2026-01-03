@@ -5,7 +5,7 @@ export const PrivacyPage: React.FC = () => {
   return (
     <div className="pt-32 pb-20 bg-bg-light dark:bg-gray-950 min-h-screen transition-colors">
       <Seo
-        title="Privacy Policy | Gajkesari Digital Agency"
+        title="Privacy Policy | Gajkesri Webtech"
         description="Learn how we collect, use, and protect your data, and your rights regarding communication and deletion."
         keywords="privacy policy, data protection, user rights, cookies, analytics"
         canonical={`${window.location.origin}/privacy`}

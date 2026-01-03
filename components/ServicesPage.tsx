@@ -14,7 +14,7 @@ export const ServicesPage: React.FC = () => {
   return (
     <div className="pt-32 pb-20 bg-bg-light dark:bg-gray-950 min-h-screen transition-colors">
       <Seo
-        title="Services | Gajkesari Digital Agency"
+        title="Services | Gajkesri Webtech"
         description="SEO, social media, content strategy, Google & Meta ads, analytics, WordPress, and creative design."
         keywords="services, SEO, social media, PPC, analytics, WordPress, creative design"
         canonical={`${window.location.origin}/services`}

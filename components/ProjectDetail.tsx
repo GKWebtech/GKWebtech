@@ -59,7 +59,7 @@ export const ProjectDetail: React.FC = () => {
   return (
     <>
       <Seo
-        title={`${project.title} | Gajkesari Digital Agency`}
+        title={`${project.title} | Gajkesri Webtech`}
         description={project.description}
         keywords={(project.tags || []).join(', ')}
         canonical={`${window.location.origin}/portfolio/${encodeURIComponent(project.id)}`}

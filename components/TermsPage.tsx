@@ -5,7 +5,7 @@ export const TermsPage: React.FC = () => {
   return (
     <div className="pt-32 pb-20 bg-bg-light dark:bg-gray-950 min-h-screen transition-colors">
       <Seo
-        title="Terms & Conditions | Gajkesari Digital Agency"
+        title="Terms & Conditions | Gajkesri Webtech"
         description="Read the terms and conditions governing services, training, communication consent, payments, and liability."
         keywords="terms, conditions, policy, payments, liability, internship, training"
         canonical={`${window.location.origin}/terms`}

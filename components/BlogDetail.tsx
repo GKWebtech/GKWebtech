@@ -24,7 +24,7 @@ export const BlogDetail: React.FC = () => {
   return (
     <div className="pt-24 pb-20 bg-bg-light dark:bg-gray-950 min-h-screen transition-colors">
       <Seo
-        title={`${blog.title} | Gajkesari Digital Agency`}
+        title={`${blog.title} | Gajkesri Webtech`}
         description={blog.excerpt}
         keywords={(blog.tags || []).join(', ')}
         canonical={window.location.href}

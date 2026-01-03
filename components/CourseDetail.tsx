@@ -30,7 +30,7 @@ const CourseDetail: React.FC = () => {
   return (
     <>
       <Seo
-        title={`${course.title} | Gajkesari Digital Agency`}
+        title={`${course.title} | Gajkesri Webtech`}
         description={course.description}
         keywords={course.features.join(', ')}
         canonical={`${window.location.origin}/course/${course.id}`}
